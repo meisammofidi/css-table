@@ -1,8 +1,95 @@
-
-
 .container {
-    display: flex;
-    height: 700px;
-    justify-content: space-around;
-    justify-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 700px;
+}
+
+.table-simple {
+  border-collapse: collapse;
+  min-width: 600px;
+  font-size: 1.2em;
+}
+
+.table-simple thead tr {
+  background: chocolate;
+  border-color: antiquewhite;
+  color: #fff;
+}
+
+.table-simple thead th:first-child {
+  text-align: center;
+}
+
+.table-simple td,
+.table-simple th {
+  padding: 20px;
+}
+
+.table-simple tbody tr {
+  background: whitesmoke;
+  color: gray;
+}
+
+.table-simple tbody tr:nth-child(even) {
+  background: blanchedalmond;
+}
+
+.table-simple tfoot tr {
+  background: chocolate;
+  border-color: antiquewhite;
+  color: #fff;
+}
+.table-simple tfoot tr th:first-child {
+  text-align: center;
+}
+
+.table-pro {
+  border-collapse: collapse;
+  min-width: 600px;
+  font-size: 1.2em;
+  font-family: Quicksand;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.table-pro thead tr {
+  background: deeppink;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+.table-pro thead tr:first-of-type {
+  text-align: center;
+}
+
+.table-pro th,
+.table-pro td {
+  padding: 1em;
+}
+
+.table-pro tfoot tr {
+  background: pink;
+  color: deeppink;
+}
+
+.table-pro tfoot th:first-of-type {
+  border-right: 2px solid whitesmoke;
+}
+
+.table-pro tbody tr {
+  border-bottom: 1px solid gray;
+}
+
+.table-pro tbody tr:last-of-type {
+  border-bottom: 2px solid deeppink;
+}
+.table-pro tbody tr:nth-of-type(even) {
+  background: rgba(249, 26, 226, 0.09);
+}
+
+.table-pro tbody tr:hover {
+    font-weight:700;
+    color: deeppink;
 }
